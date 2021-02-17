@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
-import button from './button'
+import {Button} from './button'
+import '../Styles/navbar.css'
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -77,7 +78,7 @@ function Navbar() {
             
         </>
     )
-}
+};
 
 export default Navbar
 
