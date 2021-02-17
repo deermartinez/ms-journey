@@ -1,13 +1,29 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
+import Button from './button'
 
 function Navbar() {
     const [click, setClick] = useState(false);
+    const [button, setButton] = useState(true);
 
     const handleClick = () => setClick(!click);
     //this is setting click and its value to opposite-false/true/false/true
     
     const closeMobileMenu = () => setClick(false);
+
+
+    const showButton = () =>{
+        if (window.innerWidth <= 960){
+            setButton(false);
+        }else{
+            setButton(true);
+        }
+    };
+
+    window.addEventListener('resize', showButton);
+
+
+
     return (
         <>
         <nav className='navbar'>
@@ -41,6 +57,21 @@ function Navbar() {
                         </Link>
                     </li>
                 </ul>
+
+
+
+                {button &&  
+                // {/* && shortcut, returns whatever is after if true */}
+                <Button buttonStyle= 'btn--outline'> SIGN UP</Button>};
+                {/* assigning btn--outline to this button automatically makes it an outline
+                due to checkButtonStyle in button.js
+                which is:
+                const checkButtonStyle = StyLES.includes(buttonStyle) ?
+                buttonStyle : STYLES[0]; */}
+                
+
+
+
             </div>
         </nav>
             
