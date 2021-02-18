@@ -2,18 +2,32 @@ import React from 'react';
 import Navbar from '../src/Components/navbar';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
+import home from './Pages/home'
+
+
+
+// Catchphrase: "I have MS. MS doesn't have me"
+// She wants the page to be inspiring. She wants to show that people with autoimmune disease can live normal lives. 
+// She wants some statistics on the disease on her page.
+// Helpful links for resources
+// She wants a form where people can sign up for inspirational quotes. 
+
+
+
 function App() {
   return (
     <>
     <Router>
       <Navbar/>
       <Switch>
-        <Route path = '/' exact/>
+        <Route path = '/' exact component ={home}/>
       </Switch>
       </Router>
     </>
   )
 }
+
+
 
 export default App
 

@@ -37,7 +37,7 @@ function Navbar() {
         <nav className='navbar'>
             <div className = 'navbar-container container'>
                 <Link to ='/' className='navbar-logo' onClick={closeMobileMenu}>
-                    LOGO <i className='fab fa-typo3'/>
+                    MY MS JOURNEY <i className='fab fa-typo3'/>
                 </Link>
                 <div className='menu-icon' onClick={handleClick}>
                     {/* need to make handleclick function ^^^^^ */}
