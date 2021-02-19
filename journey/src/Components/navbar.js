@@ -3,6 +3,9 @@ import {Link} from 'react-router-dom';
 import {Button} from './button'
 import '../Styles/navbar.css'
 
+
+
+
 function Navbar() {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
@@ -36,16 +39,24 @@ function Navbar() {
         <> 
         <nav className='navbar'>
             <div className = 'navbar-container container'>
-                <Link to ='/' className='navbar-logo' onClick={closeMobileMenu}>
-                    MY MS JOURNEY <i className='fab fa-typo3'/>
+                <Link to ='/' 
+                className='navbar-logo' 
+                onClick={closeMobileMenu}>
+                    MY MS JOURNEY 
+                    <i className='fab fa-typo3'/>
                 </Link>
-                <div className='menu-icon' onClick={handleClick}>
+
+                <div className='menu-icon' 
+                onClick={handleClick}>
                     {/* need to make handleclick function ^^^^^ */}
                     {/* hamburger menu */}
-                    <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
+                    <i className=
+                    {click ? 'fas fa-times' : 'fas fa-bars'}/>
                 {/* Whenyou click, it changes from hamburger to bars */}
                 </div>
-                <ul className ={click ? 'nav-menu active' : 'nav-menu'}>
+
+                <ul className =
+                {click ? 'nav-menu active' : 'nav-menu'}>
                     {/* //"if else" */}
                     <li className = 'nav-item'>
                         <Link to = "/" className = 'nav-links' onClick={closeMobileMenu}>

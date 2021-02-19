@@ -20,6 +20,13 @@ video{
 }
 
 
+.col-one{
+    background-color:teal;
+}
+
+
+
+
 .section-container > h1{
     color:yellow;
     font-size:50px;
