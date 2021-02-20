@@ -1,6 +1,7 @@
-.cards {
-    padding: 4rem;
-    background: #fff;
+.card-back {
+    /* padding: 4rem; */
+    background-color: rgb(247, 159, 121);
+    text-align:center;
   }
   
   h1 {
@@ -8,12 +9,20 @@
   }
   
   .cards-container {
-    display: flex;
-    flex-flow: column;
+    
     align-items: center;
     max-width: 1120px;
-    width: 90%;
+    
     margin: 0 auto;
+    
+  }
+  .info-cards{
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    align-items: center; 
+    margin: 0 auto;
+  
   }
   
   .cards-wrapper {
@@ -65,7 +74,7 @@
     max-width: calc((100%) - 60px);
     font-size: 12px;
     font-weight: 700;
-    color: #fff;
+    color: rgb(199, 173, 173);
     background-color: #1f98f4;
     box-sizing: border-box;
   }

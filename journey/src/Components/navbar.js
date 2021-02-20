@@ -79,9 +79,9 @@ function Navbar() {
 
 
 
-                {button &&  
-                // {/* && shortcut, returns whatever is after if true */}
-                <Button buttonStyle= 'btn--outline'> SIGN UP</Button>};
+                {/* {button &&   */}
+                 {/* && shortcut, returns whatever is after if true */}
+                {/* <Button buttonStyle= 'btn--outline'> SIGN UP</Button>}; */}
                 {/* assigning btn--outline to this button automatically makes it an outline
                 due to checkButtonStyle in button.js
                 which is:
@@ -98,7 +98,7 @@ function Navbar() {
     )
 };
 
-export default Navbar
+export default Navbar;
 
 
 

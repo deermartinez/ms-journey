@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import '../App.css';
 import Section from '../Components/section';
-import Card from '../Components/card';
+import Cards from '../Components/card';
 import Footer from '../Components/footer';
 
 
@@ -10,7 +10,7 @@ function home(){
         <>
         
         <Section />
-        <Card/>
+        <Cards/>
         <Footer/>
         </>
 

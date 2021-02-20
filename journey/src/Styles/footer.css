@@ -1,19 +1,36 @@
 .footer-container{
-    background-color:green;
+    background-color:rgb(247, 208, 138);
     padding: 4rem 0 2rem 0;
     display:flex;
     flex-direction: column;
     justify-content:center;
     align-self: center;
+    text-align:center;
 }
 
 .footer-signup{
     display:flex;
     flex-direction:column;
-    justify-content: center;
+    justify-content: space-between;
     align-items:center;
     text-align:center;
     margin-bottom:24px;
-    padding:20px;
+    margin: auto;
+    padding:50px;
+    padding-right:50px;
     color:white;
+
+    
+    background-color:rgb(194, 141, 99);
+ 
+
+    
+    width: 50%;
+    border: 3px solid rgb(160, 88, 41);
 }
+
+
+.footer-signup-heading{
+    font-size:20px
+}
+

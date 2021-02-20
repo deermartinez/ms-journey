@@ -8,21 +8,134 @@ video{
 
 .section-container{
     /* background: url('') center center/cover */
-    background-color: rgb(135, 182, 167);
+    /* background-color: rgb(246, 246, 246); */
+    
     /* no-repeat; */
-    height:100vh;
-    widows: 100%;display:flex;
-    flex-direction: column;
+     height:140vh;
+    /* widows: 100%;
+    display:flex; 
+    flex-direction: column; 
     justify-content:center;
-    align-items:center;
+    align-items:center;   */ 
     /* box-shadow: inset 0 0 0 1000px rgb(2, 0, 0); */
-    object-fit: contain;
+    object-fit: contain; 
+
+      background: url("https://www.dau.edu/powerful-examples/PublishingImages/website-banner-dau-mil.png");
+    background-size: 'cover';
+    
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+
+
+.back-wrapper {    
+background-color:rgba(0, 0, 0, 0.2);
+height:150vh;
 }
 
 
 .col-one{
-    background-color:teal;
+    background-color:rgba(75, 77, 77, 0.05);
+    grid-template-columns: 40px 50px auto 50px 40px;
+    grid-template-rows: 25% 100px auto;
+
+    position: relative;
+    z-index: 1;
+     width:60%;
+     height:80vh;
+    
+    padding-top: 15.51724vh;
+    padding-right: 4.16667vw;
+    padding-right: 5vw;
+    padding-bottom:0 ; 
+
+
+
+
+
+    text-align:center;
+
+    
 }
+
+.story{
+    background-color:rgba(255, 255, 255, 0.212);
+ 
+    font-size:20px;
+    display:flex;
+        flex-direction:column;
+        
+  white-space: pre-wrap;
+  width:90%;
+  padding-left:200px;
+  padding-right:100px;
+
+  padding-top:100px;
+}
+
+.connection{
+        display:flex;
+        flex-direction:column;
+        
+  white-space: pre-wrap;
+  width:50%;
+  padding-left:200px;
+  padding-top:100px;
+
+}
+
+.col-two >ul{
+    padding-top:65px;
+    width:80%;
+    font-size:20px;
+}
+
+
+
+.col-one > h1{
+    font-size:60px;
+}
+
+.col-two{
+    padding-top:10px;
+    background-color:rgba(135, 182, 167, 0.157);
+    width:35%;
+    /* z-index: 1; */
+    
+    position: absolute; /*or fixed*/
+
+    top:150px;
+    right:0;
+    float:right;
+    height:100vh;
+
+
+    /* display:flex;
+    justify-content:flex-end; */
+}
+
+.col-three{
+    background-color:rgba(172, 235, 0, 0);
+    width:105%;
+    /* z-index: 1; */
+    
+    position: absolute; /*or fixed*/
+
+    top:750px;
+    right:0;
+    float:right;
+    height:45vh;
+
+    
+
+
+}
+
+
+
 
 
 
